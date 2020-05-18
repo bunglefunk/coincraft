@@ -16,12 +16,21 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "PowerCore",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.coincraft.powercore": "Power Core",
       "itemGroup.tabcoincraft": "CoinCraft",
       "block.coincraft.spigot": "Spigot"
     }
