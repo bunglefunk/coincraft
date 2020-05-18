@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "ropeladder:default",
-    "rotationMode": 1,
+    "rotationMode": 3,
     "hasTransparency": true,
     "transparencyType": "CUTOUT",
     "mx": 0.0,

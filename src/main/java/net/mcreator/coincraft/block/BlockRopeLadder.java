@@ -119,7 +119,9 @@ public class BlockRopeLadder extends ElementsCoinCraft.ModElement {
 		@Override
 		public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta,
 				EntityLivingBase placer) {
-			return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
+			if (facing == EnumFacing.UP || facing == EnumFacing.DOWN)
+				return this.getDefaultState().withProperty(FACING, EnumFacing.NORTH);
+			return this.getDefaultState().withProperty(FACING, facing);
 		}
 
 		@Override
