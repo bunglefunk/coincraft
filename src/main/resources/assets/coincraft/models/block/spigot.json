@@ -3,6 +3,6 @@
   "textures": {
     "all": "coincraft:blocks/spigot_uv",
     "particle": "coincraft:blocks/spigot_uv",
-    "1": "coincraft:blocks/"
+    "1": "coincraft:blocks/spigot_uv"
   }
 }

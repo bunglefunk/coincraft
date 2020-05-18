@@ -6,6 +6,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
@@ -13,15 +15,22 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Rotation;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.Mirror;
+import net.minecraft.util.Direction;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
+import net.minecraft.state.StateContainer;
+import net.minecraft.state.DirectionProperty;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
@@ -31,6 +40,7 @@ import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -62,15 +72,46 @@ public class SpigotBlock extends CoinCraftElements.ModElement {
 		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("spigot"));
 	}
 	public static class CustomBlock extends Block {
+		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(3f, 4.8f).lightValue(0).harvestLevel(1)
 					.harvestTool(ToolType.PICKAXE));
+			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("spigot");
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public BlockRenderLayer getRenderLayer() {
+			return BlockRenderLayer.CUTOUT;
+		}
+
+		@Override
+		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return false;
 		}
 
 		@Override
 		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
 			return true;
+		}
+
+		@Override
+		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
+			builder.add(FACING);
+		}
+
+		public BlockState rotate(BlockState state, Rotation rot) {
+			return state.with(FACING, rot.rotate(state.get(FACING)));
+		}
+
+		public BlockState mirror(BlockState state, Mirror mirrorIn) {
+			return state.rotate(mirrorIn.toRotation(state.get(FACING)));
+		}
+
+		@Override
+		public BlockState getStateForPlacement(BlockItemUseContext context) {
+			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
 		}
 
 		@Override
