@@ -2,7 +2,7 @@ package net.mcreator.coincraft.procedure;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.entity.Entity;
+import net.minecraft.util.EnumFacing;
 
 import net.mcreator.coincraft.block.BlockSpigotOffWest;
 import net.mcreator.coincraft.block.BlockSpigotOffSouth;
@@ -17,8 +17,8 @@ public class ProcedureSpigotDirection extends ElementsCoinCraft.ModElement {
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure SpigotDirection!");
+		if (dependencies.get("direction") == null) {
+			System.err.println("Failed to load dependency direction for procedure SpigotDirection!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
@@ -37,21 +37,23 @@ public class ProcedureSpigotDirection extends ElementsCoinCraft.ModElement {
 			System.err.println("Failed to load dependency world for procedure SpigotDirection!");
 			return;
 		}
-		Entity entity = (Entity) dependencies.get("entity");
+		EnumFacing direction = (EnumFacing) dependencies.get("direction");
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		if ((!(world.isRemote))) {
-			if ((((entity.rotationYaw) >= 45) && ((entity.rotationYaw) < 135))) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockSpigotOffEast.block.getDefaultState(), 3);
-			} else if ((((entity.rotationYaw) >= 135) && ((entity.rotationYaw) < 225))) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockSpigotOffNorth.block.getDefaultState(), 3);
-			} else if ((((entity.rotationYaw) >= 225) && ((entity.rotationYaw) < 315))) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockSpigotOffWest.block.getDefaultState(), 3);
-			} else {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockSpigotOffSouth.block.getDefaultState(), 3);
-			}
+		if (((direction == EnumFacing.WEST) && (world.isAirBlock(new BlockPos((int) (x - 1), (int) y, (int) z))))) {
+			world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) z), BlockSpigotOffEast.block.getDefaultState(), 3);
+		} else if (((direction == EnumFacing.SOUTH) && (world.isAirBlock(new BlockPos((int) x, (int) y, (int) (z - 1)))))) {
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)), BlockSpigotOffNorth.block.getDefaultState(), 3);
+		} else if (((direction == EnumFacing.EAST) && (world.isAirBlock(new BlockPos((int) (x + 1), (int) y, (int) z))))) {
+			world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) z), BlockSpigotOffWest.block.getDefaultState(), 3);
+		} else if (((direction == EnumFacing.NORTH) && (world.isAirBlock(new BlockPos((int) x, (int) y, (int) (z + 1)))))) {
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)), BlockSpigotOffSouth.block.getDefaultState(), 3);
+		} else if (((direction == EnumFacing.UP) && (world.isAirBlock(new BlockPos((int) x, (int) (y + 1), (int) z))))) {
+			world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), BlockSpigotOffSouth.block.getDefaultState(), 3);
+		} else if (((direction == EnumFacing.DOWN) && (world.isAirBlock(new BlockPos((int) x, (int) (y - 1), (int) z))))) {
+			world.setBlockState(new BlockPos((int) x, (int) (y - 1), (int) z), BlockSpigotOffSouth.block.getDefaultState(), 3);
 		}
 	}
 }

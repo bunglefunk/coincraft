@@ -67,8 +67,8 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "direction",
+            "type": "direction"
           },
           {
             "name": "x",
