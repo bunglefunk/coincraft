@@ -1,0 +1,19 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "coincraft:castironingot"
+    },
+    "1": {
+      "item": "coincraft:castironingot"
+    }
+  },
+  "result": {
+    "item": "coincraft:castironplate",
+    "count": 1
+  }
+}

@@ -360,16 +360,98 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "WroughtIronFence",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Substructure",
+      "type": "item",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CastingTableLid",
+      "type": "item",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CoinMold",
+      "type": "item",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CastIronPlate",
+      "type": "item",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CastIronPlateR",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SubstructureR",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CoinMoldR",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CastingTableLidR",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WroughtIronFenceR",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "tile.spigotoffwest.name": "Spigot",
-      "itemGroup.tabcraftedcomponents": "Crafted Components",
       "item.diamondcoin.name": "Diamond Coin",
+      "itemGroup.tabcraftedcomponents": "Crafted Components",
+      "tile.spigotoffwest.name": "Spigot",
       "item.itemspigot.name": "Spigot",
+      "tile.wroughtironfence.name": "Wrought Iron Fence",
+      "item.substructure.name": "Substructure",
       "tile.spigotoffeast.name": "Spigot",
       "tile.spigotoffsouth.name": "Spigot",
       "item.ironcoin.name": "Iron Coin",
@@ -387,13 +469,16 @@
       "item.spigotmount.name": "Spigot Mount",
       "item.levitationelement.name": "Levitation Element",
       "item.cruciblecasing.name": "Crucible Casing",
+      "item.coinmold.name": "Coin Mold",
       "tile.powercore.name": "Power Core",
       "item.emeraldcoin.name": "Emerald Coin",
       "item.powercorenode.name": "Power Core Node",
       "tile.castironblock.name": "Cast Iron Block",
       "item.spigotbase.name": "Spigot Base",
+      "item.castironplate.name": "Cast Iron Plate",
       "block.coincraft.spigot": "Spigot",
-      "item.wroughtironbar.name": "Wrought Iron Bar"
+      "item.wroughtironbar.name": "Wrought Iron Bar",
+      "item.castingtablelid.name": "Casting Table Lid"
     }
   },
   "workspaceSettings": {

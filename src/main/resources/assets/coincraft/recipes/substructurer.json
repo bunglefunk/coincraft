@@ -1,0 +1,33 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "coincraft:castironplate"
+    },
+    "2": {
+      "item": "coincraft:castironplate"
+    },
+    "3": {
+      "item": "coincraft:castironplate"
+    },
+    "4": {
+      "item": "coincraft:castironplate"
+    },
+    "5": {
+      "item": "coincraft:castironplate"
+    },
+    "7": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result": {
+    "item": "coincraft:substructure",
+    "count": 1
+  }
+}

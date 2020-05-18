@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "coincraft:blocks/castironblocktop",
+    "particle": "coincraft:blocks/castironblocktop"
+  }
+}

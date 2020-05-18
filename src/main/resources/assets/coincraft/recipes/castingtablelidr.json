@@ -1,0 +1,32 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "coincraft:castironplate"
+    },
+    "1": {
+      "item": "coincraft:castironplate"
+    },
+    "2": {
+      "item": "coincraft:castironplate"
+    },
+    "3": {
+      "item": "coincraft:castironingot"
+    },
+    "4": {
+      "item": "minecraft:redstone_block"
+    },
+    "5": {
+      "item": "coincraft:castironingot"
+    }
+  },
+  "result": {
+    "item": "coincraft:castingtablelid",
+    "count": 1
+  }
+}
