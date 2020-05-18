@@ -470,9 +470,9 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "tile.spigotoffwest.name": "Spigot",
-      "itemGroup.tabcraftedcomponents": "Crafted Components",
       "item.diamondcoin.name": "Diamond Coin",
+      "itemGroup.tabcraftedcomponents": "Crafted Components",
+      "tile.spigotoffwest.name": "Spigot",
       "item.itemspigot.name": "Spigot",
       "tile.wroughtironfence.name": "Wrought Iron Fence",
       "item.substructure.name": "Substructure",
