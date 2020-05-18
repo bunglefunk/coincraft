@@ -1,9 +1,15 @@
 block.coincraft.powercore=Power Core
 tile.spigotoffwest.name=Spigot
+itemGroup.tabcraftedcomponents=Crafted Components
+item.diamondcoin.name=Diamond Coin
 item.itemspigot.name=Spigot
-itemGroup.tabcoincraft=CoinCraft
 tile.powercore.name=Power Core
 tile.spigotoffeast.name=Spigot
 tile.spigotoffsouth.name=Spigot
+item.emeraldcoin.name=Emerald Coin
+item.ironcoin.name=Iron Coin
+item.goldcoin.name=Gold Coin
+itemGroup.tabcoincraft=CoinCraft
+item.endercoin.name=Ender Coin
 block.coincraft.spigot=Spigot
 tile.spigotoffnorth.name=Spigot

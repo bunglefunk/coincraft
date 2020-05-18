@@ -2,9 +2,9 @@
   "_fv": 6,
   "_type": "tab",
   "definition": {
-    "name": "CoinCraft",
+    "name": "Crafted Components",
     "icon": {
-      "value": "CUSTOM:EnderCoin"
+      "value": "Blocks.CRAFTING_TABLE"
     },
     "showSearch": false
   }

@@ -5,24 +5,24 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
 import net.minecraft.item.ItemStack;
+import net.minecraft.init.Blocks;
 import net.minecraft.creativetab.CreativeTabs;
 
-import net.mcreator.coincraft.item.ItemEnderCoin;
 import net.mcreator.coincraft.ElementsCoinCraft;
 
 @ElementsCoinCraft.ModElement.Tag
-public class TabCoinCraft extends ElementsCoinCraft.ModElement {
-	public TabCoinCraft(ElementsCoinCraft instance) {
-		super(instance, 1);
+public class TabCraftedComponents extends ElementsCoinCraft.ModElement {
+	public TabCraftedComponents(ElementsCoinCraft instance) {
+		super(instance, 10);
 	}
 
 	@Override
 	public void initElements() {
-		tab = new CreativeTabs("tabcoincraft") {
+		tab = new CreativeTabs("tabcraftedcomponents") {
 			@SideOnly(Side.CLIENT)
 			@Override
 			public ItemStack getTabIconItem() {
-				return new ItemStack(ItemEnderCoin.block, (int) (1));
+				return new ItemStack(Blocks.CRAFTING_TABLE, (int) (1));
 			}
 
 			@SideOnly(Side.CLIENT)
