@@ -44,12 +44,12 @@ public class ProcedureSpigotDirection extends ElementsCoinCraft.ModElement {
 		World world = (World) dependencies.get("world");
 		if (((direction == EnumFacing.WEST) && (world.isAirBlock(new BlockPos((int) (x - 1), (int) y, (int) z))))) {
 			world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) z), BlockSpigotOffEast.block.getDefaultState(), 3);
-		} else if (((direction == EnumFacing.SOUTH) && (world.isAirBlock(new BlockPos((int) x, (int) y, (int) (z - 1)))))) {
-			world.setBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)), BlockSpigotOffNorth.block.getDefaultState(), 3);
+		} else if (((direction == EnumFacing.SOUTH) && (world.isAirBlock(new BlockPos((int) x, (int) y, (int) (z + 1)))))) {
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)), BlockSpigotOffNorth.block.getDefaultState(), 3);
 		} else if (((direction == EnumFacing.EAST) && (world.isAirBlock(new BlockPos((int) (x + 1), (int) y, (int) z))))) {
 			world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) z), BlockSpigotOffWest.block.getDefaultState(), 3);
-		} else if (((direction == EnumFacing.NORTH) && (world.isAirBlock(new BlockPos((int) x, (int) y, (int) (z + 1)))))) {
-			world.setBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)), BlockSpigotOffSouth.block.getDefaultState(), 3);
+		} else if (((direction == EnumFacing.NORTH) && (world.isAirBlock(new BlockPos((int) x, (int) y, (int) (z - 1)))))) {
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)), BlockSpigotOffSouth.block.getDefaultState(), 3);
 		} else if (((direction == EnumFacing.UP) && (world.isAirBlock(new BlockPos((int) x, (int) (y + 1), (int) z))))) {
 			world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), BlockSpigotOffSouth.block.getDefaultState(), 3);
 		} else if (((direction == EnumFacing.DOWN) && (world.isAirBlock(new BlockPos((int) x, (int) (y - 1), (int) z))))) {
