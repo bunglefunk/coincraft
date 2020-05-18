@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_side",
+  "textures": {
+    "wall": "coincraft:blocks/castironblocktop",
+    "particle": "coincraft:blocks/castironblocktop"
+  }
+}

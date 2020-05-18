@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "coincraft:ropeladder"
+    },
+    "facing=north": {
+      "model": "coincraft:ropeladder"
+    },
+    "facing=east": {
+      "model": "coincraft:ropeladder",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coincraft:ropeladder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coincraft:ropeladder",
+      "y": 270
+    }
+  }
+}

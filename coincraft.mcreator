@@ -440,15 +440,39 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "CastIronWall",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CastIronWallR",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RopeLadder",
+      "type": "block",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.diamondcoin.name": "Diamond Coin",
-      "itemGroup.tabcraftedcomponents": "Crafted Components",
       "tile.spigotoffwest.name": "Spigot",
+      "itemGroup.tabcraftedcomponents": "Crafted Components",
+      "item.diamondcoin.name": "Diamond Coin",
       "item.itemspigot.name": "Spigot",
       "tile.wroughtironfence.name": "Wrought Iron Fence",
       "item.substructure.name": "Substructure",
@@ -467,6 +491,7 @@
       "tile.spigotoffnorth.name": "Spigot",
       "block.coincraft.powercore": "Power Core",
       "item.spigotmount.name": "Spigot Mount",
+      "tile.castironwall.name": "Cast Iron Wall",
       "item.levitationelement.name": "Levitation Element",
       "item.cruciblecasing.name": "Crucible Casing",
       "item.coinmold.name": "Coin Mold",
@@ -476,6 +501,7 @@
       "tile.castironblock.name": "Cast Iron Block",
       "item.spigotbase.name": "Spigot Base",
       "item.castironplate.name": "Cast Iron Plate",
+      "tile.ropeladder.name": "Rope Ladder",
       "block.coincraft.spigot": "Spigot",
       "item.wroughtironbar.name": "Wrought Iron Bar",
       "item.castingtablelid.name": "Casting Table Lid"

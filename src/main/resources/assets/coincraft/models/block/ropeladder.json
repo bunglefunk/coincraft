@@ -1,0 +1,8 @@
+{
+  "parent": "coincraft:custom/ropeladder",
+  "textures": {
+    "all": "coincraft:blocks/opeadder",
+    "particle": "coincraft:blocks/opeadder",
+    "1": "coincraft:blocks/opeadder"
+  }
+}

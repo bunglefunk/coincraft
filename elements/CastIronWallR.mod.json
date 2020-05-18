@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CastIronIngot"
+      },
+      {
+        "value": "CUSTOM:WroughtIronBar"
+      },
+      {
+        "value": "CUSTOM:CastIronIngot"
+      },
+      {
+        "value": "CUSTOM:CastIronIngot"
+      },
+      {
+        "value": "CUSTOM:CompressedCastIron"
+      },
+      {
+        "value": "CUSTOM:CastIronIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CastIronWall"
+    },
+    "name": "castironwallr",
+    "namespace": "mod"
+  }
+}
