@@ -4,42 +4,42 @@
   "definition": {
     "recipeType": "Crafting",
     "xpReward": 0.0,
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 3,
     "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:CastIronPlate"
+        "value": ""
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:CastIronPlate"
+        "value": ""
       },
       {
-        "value": "CUSTOM:CutDiamond"
+        "value": ""
       },
       {
-        "value": "CUSTOM:CastIronPlate"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:CutDiamond"
+        "value": ""
       },
       {
-        "value": "CUSTOM:CutDiamond"
+        "value": "CUSTOM:DiamondCutters"
       },
       {
-        "value": "Blocks.GOLD_BLOCK"
+        "value": ""
       },
       {
-        "value": "CUSTOM:CutDiamond"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Substructure"
+      "value": "CUSTOM:CutDiamond"
     },
-    "name": "substructurer",
+    "name": "cutdiamondr",
     "namespace": "mod"
   }
 }

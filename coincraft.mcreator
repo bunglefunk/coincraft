@@ -464,15 +464,47 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "CutDiamond",
+      "type": "item",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DiamondCutters",
+      "type": "item",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DiamondCuttersR",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CutDiamondR",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "tile.spigotoffwest.name": "Spigot",
-      "itemGroup.tabcraftedcomponents": "Crafted Components",
       "item.diamondcoin.name": "Diamond Coin",
+      "itemGroup.tabcraftedcomponents": "Crafted Components",
+      "tile.spigotoffwest.name": "Spigot",
       "item.itemspigot.name": "Spigot",
       "tile.wroughtironfence.name": "Wrought Iron Fence",
       "item.substructure.name": "Substructure",
@@ -480,12 +512,14 @@
       "tile.spigotoffsouth.name": "Spigot",
       "item.ironcoin.name": "Iron Coin",
       "item.goldcoin.name": "Gold Coin",
+      "item.cutdiamond.name": "Cut Diamond",
       "item.castironingot.name": "Cast Iron Ingot",
       "itemGroup.tabcoincraft": "CoinCraft",
       "tile.compressedcastiron.name": "Compressed Cast Iron",
       "item.endercoin.name": "Ender Coin",
       "item.elbowpipe.name": "Elbow Pipe",
       "item.cruciblelining.name": "Crucible Lining",
+      "item.diamondcutters.name": "Diamond Cutters",
       "item.powercoreframe.name": "Power Core Frame",
       "item.spigotknob.name": "Spigot Knob",
       "tile.spigotoffnorth.name": "Spigot",
