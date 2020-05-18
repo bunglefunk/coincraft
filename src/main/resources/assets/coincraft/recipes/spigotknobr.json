@@ -1,0 +1,41 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:concrete",
+      "data": 14
+    },
+    "1": {
+      "item": "minecraft:concrete",
+      "data": 14
+    },
+    "2": {
+      "item": "minecraft:concrete",
+      "data": 14
+    },
+    "3": {
+      "item": "minecraft:concrete",
+      "data": 14
+    },
+    "4": {
+      "item": "minecraft:iron_ingot"
+    },
+    "5": {
+      "item": "minecraft:concrete",
+      "data": 14
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "coincraft:spigotknob",
+    "count": 1
+  }
+}

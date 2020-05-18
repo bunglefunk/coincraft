@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coincraft:blocks/compressedcastiron",
+    "up": "coincraft:blocks/compressedcastiron",
+    "north": "coincraft:blocks/compressedcastiron",
+    "east": "coincraft:blocks/compressedcastiron",
+    "south": "coincraft:blocks/compressedcastiron",
+    "west": "coincraft:blocks/compressedcastiron",
+    "particle": "coincraft:blocks/compressedcastiron"
+  }
+}

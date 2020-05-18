@@ -136,27 +136,205 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "SpigotKnob",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SpigotBase",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ElbowPipe",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ItemSpigotR",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SpigotKnobR",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CastIronBlock",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WroughtIronBar",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CastIronIngot",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WroughtIronBarR",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CastIronBlockR",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CompressedCastIron",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CompressedCastIronR",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ElbowPipeR",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SpigotBaseR",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LevitationElement",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "PowerCoreFrame",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "PowerCoreNode",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "PowerCoreNodeR",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "PowerCoreFrameR",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LevitationElementR",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "PowerCoreR",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.coincraft.powercore": "Power Core",
       "tile.spigotoffwest.name": "Spigot",
       "itemGroup.tabcraftedcomponents": "Crafted Components",
       "item.diamondcoin.name": "Diamond Coin",
       "item.itemspigot.name": "Spigot",
-      "tile.powercore.name": "Power Core",
       "tile.spigotoffeast.name": "Spigot",
       "tile.spigotoffsouth.name": "Spigot",
-      "item.emeraldcoin.name": "Emerald Coin",
       "item.ironcoin.name": "Iron Coin",
       "item.goldcoin.name": "Gold Coin",
+      "item.castironingot.name": "Cast Iron Ingot",
       "itemGroup.tabcoincraft": "CoinCraft",
+      "tile.compressedcastiron.name": "Compressed Cast Iron",
       "item.endercoin.name": "Ender Coin",
+      "item.elbowpipe.name": "Elbow Pipe",
+      "item.spigotknob.name": "Spigot Knob",
+      "item.powercoreframe.name": "Power Core Frame",
+      "tile.spigotoffnorth.name": "Spigot",
+      "block.coincraft.powercore": "Power Core",
+      "item.levitationelement.name": "Levitation Element",
+      "tile.powercore.name": "Power Core",
+      "item.emeraldcoin.name": "Emerald Coin",
+      "item.powercorenode.name": "Power Core Node",
+      "tile.castironblock.name": "Cast Iron Block",
+      "item.spigotbase.name": "Spigot Base",
       "block.coincraft.spigot": "Spigot",
-      "tile.spigotoffnorth.name": "Spigot"
+      "item.wroughtironbar.name": "Wrought Iron Bar"
     }
   },
   "workspaceSettings": {

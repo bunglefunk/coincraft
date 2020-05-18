@@ -1,0 +1,42 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coincraft:castironingot"
+    },
+    "1": {
+      "item": "coincraft:castironingot"
+    },
+    "2": {
+      "item": "coincraft:castironingot"
+    },
+    "3": {
+      "item": "coincraft:castironingot"
+    },
+    "4": {
+      "item": "coincraft:castironingot"
+    },
+    "5": {
+      "item": "coincraft:castironingot"
+    },
+    "6": {
+      "item": "coincraft:castironingot"
+    },
+    "7": {
+      "item": "coincraft:castironingot"
+    },
+    "8": {
+      "item": "coincraft:castironingot"
+    }
+  },
+  "result": {
+    "item": "coincraft:compressedcastiron",
+    "count": 1
+  }
+}

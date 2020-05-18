@@ -1,0 +1,24 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 4 ",
+    "6  "
+  ],
+  "key": {
+    "2": {
+      "item": "coincraft:castironingot"
+    },
+    "4": {
+      "item": "coincraft:castironingot"
+    },
+    "6": {
+      "item": "coincraft:castironingot"
+    }
+  },
+  "result": {
+    "item": "coincraft:wroughtironbar",
+    "count": 1
+  }
+}

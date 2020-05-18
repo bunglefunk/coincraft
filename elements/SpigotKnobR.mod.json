@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.CONCRETE#14"
+      },
+      {
+        "value": "Blocks.CONCRETE#14"
+      },
+      {
+        "value": "Blocks.CONCRETE#14"
+      },
+      {
+        "value": "Blocks.CONCRETE#14"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Blocks.CONCRETE#14"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SpigotKnob"
+    },
+    "name": "spigotknobr",
+    "namespace": "mod"
+  }
+}

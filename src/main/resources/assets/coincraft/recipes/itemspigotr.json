@@ -1,0 +1,23 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "23"
+  ],
+  "key": {
+    "1": {
+      "item": "coincraft:spigotknob"
+    },
+    "2": {
+      "item": "coincraft:spigotbase"
+    },
+    "3": {
+      "item": "coincraft:elbowpipe"
+    }
+  },
+  "result": {
+    "item": "coincraft:itemspigot",
+    "count": 1
+  }
+}

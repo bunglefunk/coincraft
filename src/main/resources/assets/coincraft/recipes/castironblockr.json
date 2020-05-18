@@ -1,0 +1,42 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coincraft:wroughtironbar"
+    },
+    "1": {
+      "item": "coincraft:castironingot"
+    },
+    "2": {
+      "item": "coincraft:wroughtironbar"
+    },
+    "3": {
+      "item": "coincraft:castironingot"
+    },
+    "4": {
+      "item": "coincraft:wroughtironbar"
+    },
+    "5": {
+      "item": "coincraft:castironingot"
+    },
+    "6": {
+      "item": "coincraft:wroughtironbar"
+    },
+    "7": {
+      "item": "coincraft:castironingot"
+    },
+    "8": {
+      "item": "coincraft:wroughtironbar"
+    }
+  },
+  "result": {
+    "item": "coincraft:castironblock",
+    "count": 1
+  }
+}

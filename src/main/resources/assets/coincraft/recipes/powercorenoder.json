@@ -1,0 +1,42 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coincraft:castironingot"
+    },
+    "1": {
+      "item": "coincraft:castironingot"
+    },
+    "2": {
+      "item": "coincraft:castironingot"
+    },
+    "3": {
+      "item": "coincraft:wroughtironbar"
+    },
+    "4": {
+      "item": "minecraft:redstone_torch"
+    },
+    "5": {
+      "item": "coincraft:wroughtironbar"
+    },
+    "6": {
+      "item": "minecraft:redstone_block"
+    },
+    "7": {
+      "item": "coincraft:compressedcastiron"
+    },
+    "8": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "coincraft:powercorenode",
+    "count": 1
+  }
+}

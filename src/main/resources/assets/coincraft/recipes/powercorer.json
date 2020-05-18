@@ -1,0 +1,24 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "coincraft:powercorenode"
+    },
+    "1": {
+      "item": "coincraft:levitationelement"
+    },
+    "2": {
+      "item": "coincraft:powercoreframe"
+    }
+  },
+  "result": {
+    "item": "coincraft:powercore",
+    "count": 1
+  }
+}
