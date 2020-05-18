@@ -18,7 +18,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
-import net.mcreator.coincraft.procedure.ProcedureItemSpigotRightClickedOnBlock;
+import net.mcreator.coincraft.procedure.ProcedureSpigotDirection;
 import net.mcreator.coincraft.creativetab.TabCoinCraft;
 import net.mcreator.coincraft.ElementsCoinCraft;
 
@@ -74,11 +74,12 @@ public class ItemItemSpigot extends ElementsCoinCraft.ModElement {
 			int z = pos.getZ();
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedureItemSpigotRightClickedOnBlock.executeProcedure($_dependencies);
+				ProcedureSpigotDirection.executeProcedure($_dependencies);
 			}
 			return retval;
 		}

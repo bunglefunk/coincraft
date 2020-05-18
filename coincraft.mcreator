@@ -10,14 +10,6 @@
       "ids": {}
     },
     {
-      "name": "Spigot",
-      "type": "block",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "PowerCore",
       "type": "block",
       "sortid": 2,
@@ -34,14 +26,50 @@
       "ids": {}
     },
     {
-      "name": "ItemSpigotRightClickedOnBlock",
+      "name": "SpigotOffSouth",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SpigotOffEast",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SpigotOffNorth",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SpigotOffWest",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SpigotDirection",
       "type": "procedure",
-      "sortid": 4,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "int"
@@ -67,11 +95,14 @@
   "language_map": {
     "en_us": {
       "block.coincraft.powercore": "Power Core",
+      "tile.spigotoffwest.name": "Spigot",
       "item.itemspigot.name": "Spigot",
-      "tile.spigot.name": "Spigot",
       "itemGroup.tabcoincraft": "CoinCraft",
       "tile.powercore.name": "Power Core",
-      "block.coincraft.spigot": "Spigot"
+      "tile.spigotoffeast.name": "Spigot",
+      "tile.spigotoffsouth.name": "Spigot",
+      "block.coincraft.spigot": "Spigot",
+      "tile.spigotoffnorth.name": "Spigot"
     }
   },
   "workspaceSettings": {

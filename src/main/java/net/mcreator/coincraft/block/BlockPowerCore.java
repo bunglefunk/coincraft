@@ -9,6 +9,7 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
@@ -51,6 +52,12 @@ public class BlockPowerCore extends ElementsCoinCraft.ModElement {
 			setLightLevel(0F);
 			setLightOpacity(0);
 			setCreativeTab(TabCoinCraft.tab);
+		}
+
+		@SideOnly(Side.CLIENT)
+		@Override
+		public BlockRenderLayer getBlockLayer() {
+			return BlockRenderLayer.CUTOUT_MIPPED;
 		}
 
 		@Override

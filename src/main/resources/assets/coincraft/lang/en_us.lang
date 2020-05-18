@@ -1,6 +1,9 @@
 block.coincraft.powercore=Power Core
+tile.spigotoffwest.name=Spigot
 item.itemspigot.name=Spigot
-tile.spigot.name=Spigot
 itemGroup.tabcoincraft=CoinCraft
 tile.powercore.name=Power Core
+tile.spigotoffeast.name=Spigot
+tile.spigotoffsouth.name=Spigot
 block.coincraft.spigot=Spigot
+tile.spigotoffnorth.name=Spigot

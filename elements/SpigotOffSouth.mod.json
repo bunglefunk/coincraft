@@ -2,17 +2,17 @@
   "_fv": 6,
   "_type": "block",
   "definition": {
-    "texture": "powercore",
+    "texture": "spigot_uv",
     "textureTop": "",
-    "textureLeft": "",
+    "textureLeft": "spigot_uv",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "powercore:default",
+    "customModelName": "spigot_off:default",
     "rotationMode": 0,
     "hasTransparency": true,
-    "transparencyType": "CUTOUT_MIPPED",
+    "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
     "mz": 0.0,
@@ -20,10 +20,10 @@
     "My": 1.0,
     "Mz": 1.0,
     "faceShape": "SOLID",
-    "name": "Power Core",
+    "name": "Spigot",
     "specialInfo": [],
-    "hardness": 5.0,
-    "resistance": 1200.0,
+    "hardness": 3.0,
+    "resistance": 4.8,
     "hasGravity": false,
     "creativeTab": {
       "value": "CUSTOM:CoinCraft"
@@ -31,7 +31,7 @@
     "destroyTool": "pickaxe",
     "affectedBySilkTouch": false,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:ItemSpigot"
     },
     "dropAmount": 1,
     "isBeaconBase": false,
@@ -69,7 +69,7 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,

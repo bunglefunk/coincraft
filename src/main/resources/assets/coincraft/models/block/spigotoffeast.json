@@ -1,0 +1,8 @@
+{
+  "parent": "coincraft:custom/spigot_off_east",
+  "textures": {
+    "all": "coincraft:blocks/spigot_uv",
+    "particle": "coincraft:blocks/spigot_uv",
+    "1": "coincraft:blocks/spigot_uv"
+  }
+}
