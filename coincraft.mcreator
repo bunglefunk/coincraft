@@ -366,9 +366,9 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.diamondcoin.name": "Diamond Coin",
-      "itemGroup.tabcraftedcomponents": "Crafted Components",
       "tile.spigotoffwest.name": "Spigot",
+      "itemGroup.tabcraftedcomponents": "Crafted Components",
+      "item.diamondcoin.name": "Diamond Coin",
       "item.itemspigot.name": "Spigot",
       "tile.spigotoffeast.name": "Spigot",
       "tile.spigotoffsouth.name": "Spigot",
