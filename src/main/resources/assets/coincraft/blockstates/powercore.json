@@ -1,19 +1,7 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "coincraft:block/powercore"
-    },
-    "facing=east": {
-      "model": "coincraft:block/powercore",
-      "y": 90
-    },
-    "facing=south": {
-      "model": "coincraft:block/powercore",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "coincraft:block/powercore",
-      "y": 270
+    "normal": {
+      "model": "coincraft:powercore"
     }
   }
 }

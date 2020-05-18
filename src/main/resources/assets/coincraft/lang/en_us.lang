@@ -1,0 +1,6 @@
+block.coincraft.powercore=Power Core
+item.itemspigot.name=Spigot
+tile.spigot.name=Spigot
+itemGroup.tabcoincraft=CoinCraft
+tile.powercore.name=Power Core
+block.coincraft.spigot=Spigot

@@ -4,7 +4,7 @@
   "definition": {
     "name": "CoinCraft",
     "icon": {
-      "value": "Items.SLIME_BALL"
+      "value": "CUSTOM:ItemSpigot"
     },
     "showSearch": false
   }

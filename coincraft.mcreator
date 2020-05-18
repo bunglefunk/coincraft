@@ -24,6 +24,42 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "ItemSpigot",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ItemSpigotRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -31,7 +67,10 @@
   "language_map": {
     "en_us": {
       "block.coincraft.powercore": "Power Core",
+      "item.itemspigot.name": "Spigot",
+      "tile.spigot.name": "Spigot",
       "itemGroup.tabcoincraft": "CoinCraft",
+      "tile.powercore.name": "Power Core",
       "block.coincraft.spigot": "Spigot"
     }
   },
@@ -39,7 +78,7 @@
     "modid": "coincraft",
     "modName": "CoinCraft",
     "version": "1.0.0",
-    "author": "kapla, MCreator",
+    "author": "bunglefunk",
     "websiteURL": "https://mcreator.net",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
@@ -47,7 +86,8 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "1.14.4",
+    "currentGenerator": "1.12.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.coincraft",
     "lockBaseModFiles": false
   },

@@ -1,18 +1,21 @@
 {
   "variants": {
+    "normal": {
+      "model": "coincraft:spigot"
+    },
     "facing=north": {
-      "model": "coincraft:block/spigot"
+      "model": "coincraft:spigot"
     },
     "facing=east": {
-      "model": "coincraft:block/spigot",
+      "model": "coincraft:spigot",
       "y": 90
     },
     "facing=south": {
-      "model": "coincraft:block/spigot",
+      "model": "coincraft:spigot",
       "y": 180
     },
     "facing=west": {
-      "model": "coincraft:block/spigot",
+      "model": "coincraft:spigot",
       "y": 270
     }
   }

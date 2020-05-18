@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "spigot_off:default",
-    "rotationMode": 1,
+    "rotationMode": 3,
     "hasTransparency": true,
     "transparencyType": "SOLID",
     "mx": 0.0,
@@ -31,7 +31,7 @@
     "destroyTool": "pickaxe",
     "affectedBySilkTouch": false,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:ItemSpigot"
     },
     "dropAmount": 1,
     "isBeaconBase": false,
