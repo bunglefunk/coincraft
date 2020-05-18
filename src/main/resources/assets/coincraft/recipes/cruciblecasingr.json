@@ -1,0 +1,44 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:glass_pane"
+    },
+    "1": {
+      "item": "coincraft:castironingot"
+    },
+    "2": {
+      "item": "coincraft:compressedcastiron"
+    },
+    "3": {
+      "item": "coincraft:castironingot"
+    },
+    "4": {
+      "item": "minecraft:dye",
+      "data": 12
+    },
+    "5": {
+      "item": "coincraft:castironingot"
+    },
+    "6": {
+      "item": "coincraft:compressedcastiron"
+    },
+    "7": {
+      "item": "coincraft:castironingot"
+    },
+    "8": {
+      "item": "minecraft:dye",
+      "data": 9
+    }
+  },
+  "result": {
+    "item": "coincraft:cruciblecasing",
+    "count": 1
+  }
+}

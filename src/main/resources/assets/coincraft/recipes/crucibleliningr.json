@@ -1,0 +1,29 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "coincraft:compressedcastiron"
+    },
+    "2": {
+      "item": "coincraft:compressedcastiron"
+    },
+    "3": {
+      "item": "coincraft:castironblock"
+    },
+    "4": {
+      "item": "coincraft:compressedcastiron"
+    },
+    "5": {
+      "item": "coincraft:castironblock"
+    }
+  },
+  "result": {
+    "item": "coincraft:cruciblelining",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "2 "
+  ],
+  "key": {
+    "0": {
+      "item": "coincraft:cruciblecasing"
+    },
+    "1": {
+      "item": "coincraft:spigotmount"
+    },
+    "2": {
+      "item": "coincraft:cruciblelining"
+    }
+  },
+  "result": {
+    "item": "minecraft:fire",
+    "count": 1
+  }
+}
