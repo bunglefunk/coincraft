@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coincraft:block/spigot"
+    }
+  }
+}
