@@ -4,7 +4,7 @@
   "pattern": [
     "0 2",
     "345",
-    " 7 "
+    "678"
   ],
   "key": {
     "0": {
@@ -14,16 +14,22 @@
       "item": "coincraft:castironplate"
     },
     "3": {
-      "item": "coincraft:castironplate"
+      "item": "coincraft:cutdiamond"
     },
     "4": {
       "item": "coincraft:castironplate"
     },
     "5": {
-      "item": "coincraft:castironplate"
+      "item": "coincraft:cutdiamond"
+    },
+    "6": {
+      "item": "coincraft:cutdiamond"
     },
     "7": {
       "item": "minecraft:gold_block"
+    },
+    "8": {
+      "item": "coincraft:cutdiamond"
     }
   },
   "result": {

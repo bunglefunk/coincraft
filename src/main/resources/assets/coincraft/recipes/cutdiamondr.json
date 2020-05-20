@@ -1,0 +1,20 @@
+{
+  "group": "coincraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "2 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:diamond"
+    },
+    "2": {
+      "item": "coincraft:unknown_element"
+    }
+  },
+  "result": {
+    "item": "coincraft:cutdiamond",
+    "count": 3
+  }
+}

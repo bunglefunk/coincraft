@@ -9,37 +9,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:CastIronPlate"
+        "value": ""
+      },
+      {
+        "value": "Items.GOLD_INGOT"
       },
       {
         "value": ""
       },
       {
+        "value": "Blocks.PLANKS"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
         "value": "CUSTOM:CastIronPlate"
       },
       {
-        "value": "CUSTOM:CutDiamond"
+        "value": "Blocks.PLANKS"
       },
       {
-        "value": "CUSTOM:CastIronPlate"
-      },
-      {
-        "value": "CUSTOM:CutDiamond"
-      },
-      {
-        "value": "CUSTOM:CutDiamond"
-      },
-      {
-        "value": "Blocks.GOLD_BLOCK"
-      },
-      {
-        "value": "CUSTOM:CutDiamond"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Substructure"
+      "value": "CUSTOM:DiamondCutters"
     },
-    "name": "substructurer",
+    "name": "diamondcuttersr",
     "namespace": "mod"
   }
 }

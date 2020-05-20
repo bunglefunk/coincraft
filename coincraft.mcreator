@@ -1,7 +1,5 @@
 {
-  "id_map": {
-    "GUI": 2
-  },
+  "id_map": {},
   "mod_elements": [
     {
       "name": "CoinCraft",
@@ -503,21 +501,52 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "CutDiamond",
+      "type": "item",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CutDiamondR",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DiamondCuttersR",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DiamondCutters",
+      "type": "item",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.diamondcoin.name": "Diamond Coin",
-      "itemGroup.tabcraftedcomponents": "Crafted Components",
       "tile.spigotoffwest.name": "Spigot",
+      "itemGroup.tabcraftedcomponents": "Crafted Components",
+      "item.diamondcoin.name": "Diamond Coin",
       "item.itemspigot.name": "Spigot",
       "tile.wroughtironfence.name": "Wrought Iron Fence",
       "item.substructure.name": "Substructure",
       "tile.spigotoffeast.name": "Spigot",
       "tile.spigotoffsouth.name": "Spigot",
-      "tile.castironfurnaceon.name": "Cast Iron Furnace (On)",
       "item.ironcoin.name": "Iron Coin",
       "item.goldcoin.name": "Gold Coin",
       "item.castironingot.name": "Cast Iron Ingot",
@@ -535,7 +564,6 @@
       "item.levitationelement.name": "Levitation Element",
       "item.cruciblecasing.name": "Crucible Casing",
       "item.coinmold.name": "Coin Mold",
-      "tile.castironfurnaceoff.name": "Cast Iron Furnace Off",
       "tile.powercore.name": "Power Core",
       "item.emeraldcoin.name": "Emerald Coin",
       "item.powercorenode.name": "Power Core Node",
