@@ -1,12 +1,24 @@
 
 package net.mcreator.coincraft.item;
 
+import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.block.state.IBlockState;
+
+import net.mcreator.coincraft.creativetab.TabCoinCraft;
+import net.mcreator.coincraft.ElementsCoinCraft;
+
 @ElementsCoinCraft.ModElement.Tag
 public class ItemDiamondCutters extends ElementsCoinCraft.ModElement {
-
 	@GameRegistry.ObjectHolder("coincraft:diamondcutters")
 	public static final Item block = null;
-
 	public ItemDiamondCutters(ElementsCoinCraft instance) {
 		super(instance, 58);
 	}
@@ -21,9 +33,7 @@ public class ItemDiamondCutters extends ElementsCoinCraft.ModElement {
 	public void registerModels(ModelRegistryEvent event) {
 		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("coincraft:diamondcutters", "inventory"));
 	}
-
 	public static class ItemCustom extends Item {
-
 		public ItemCustom() {
 			setMaxDamage(0);
 			maxStackSize = 1;
@@ -46,7 +56,5 @@ public class ItemDiamondCutters extends ElementsCoinCraft.ModElement {
 		public float getDestroySpeed(ItemStack par1ItemStack, IBlockState par2Block) {
 			return 1F;
 		}
-
 	}
-
 }

@@ -79,6 +79,9 @@
     "inventoryOutSlotIDs": [
       3
     ],
+    "onTickUpdate": {
+      "name": "CastIronFurnaceUpdateTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
