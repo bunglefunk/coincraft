@@ -1,6 +1,6 @@
-item.diamondcoin.name=Diamond Coin
-itemGroup.tabcraftedcomponents=Crafted Components
 tile.spigotoffwest.name=Spigot
+itemGroup.tabcraftedcomponents=Crafted Components
+item.diamondcoin.name=Diamond Coin
 item.itemspigot.name=Spigot
 tile.wroughtironfence.name=Wrought Iron Fence
 item.substructure.name=Substructure
@@ -26,7 +26,7 @@ tile.castironwall.name=Cast Iron Wall
 item.levitationelement.name=Levitation Element
 item.cruciblecasing.name=Crucible Casing
 item.coinmold.name=Coin Mold
-tile.castironfurnaceoff.name=Cast Iron Furnace Off
+tile.castironfurnaceoff.name=Cast Iron Furnace
 tile.powercore.name=Power Core
 item.emeraldcoin.name=Emerald Coin
 item.powercorenode.name=Power Core Node
