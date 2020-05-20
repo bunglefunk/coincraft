@@ -1,0 +1,8 @@
+{
+  "parent": "coincraft:custom/castironfurnace",
+  "textures": {
+    "all": "coincraft:blocks/astronurnacen",
+    "particle": "coincraft:blocks/astronurnacen",
+    "1": "coincraft:blocks/furnace_tex"
+  }
+}

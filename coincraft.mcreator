@@ -1,5 +1,7 @@
 {
-  "id_map": {},
+  "id_map": {
+    "GUI": 2
+  },
   "mod_elements": [
     {
       "name": "CoinCraft",
@@ -464,6 +466,43 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "CastIronFurnaceGUI",
+      "type": "gui",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 2
+      }
+    },
+    {
+      "name": "CastIronFurnaceOff",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CastIronFurnaceOn",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CastIronFurnaceUpdateTick",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
@@ -478,6 +517,7 @@
       "item.substructure.name": "Substructure",
       "tile.spigotoffeast.name": "Spigot",
       "tile.spigotoffsouth.name": "Spigot",
+      "tile.castironfurnaceon.name": "Cast Iron Furnace (On)",
       "item.ironcoin.name": "Iron Coin",
       "item.goldcoin.name": "Gold Coin",
       "item.castironingot.name": "Cast Iron Ingot",
@@ -495,6 +535,7 @@
       "item.levitationelement.name": "Levitation Element",
       "item.cruciblecasing.name": "Crucible Casing",
       "item.coinmold.name": "Coin Mold",
+      "tile.castironfurnaceoff.name": "Cast Iron Furnace Off",
       "tile.powercore.name": "Power Core",
       "item.emeraldcoin.name": "Emerald Coin",
       "item.powercorenode.name": "Power Core Node",

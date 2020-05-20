@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "coincraft:castironfurnaceon"
+    },
+    "facing=north": {
+      "model": "coincraft:castironfurnaceon"
+    },
+    "facing=east": {
+      "model": "coincraft:castironfurnaceon",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coincraft:castironfurnaceon",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coincraft:castironfurnaceon",
+      "y": 270
+    }
+  }
+}

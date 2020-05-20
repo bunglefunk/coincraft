@@ -1,0 +1,97 @@
+{
+  "_fv": 6,
+  "_type": "block",
+  "definition": {
+    "texture": "astronurnacen",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "castironfurnace:default",
+    "rotationMode": 1,
+    "hasTransparency": true,
+    "transparencyType": "SOLID",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 1.0,
+    "Mz": 1.0,
+    "faceShape": "SOLID",
+    "name": "Cast Iron Furnace (On)",
+    "specialInfo": [],
+    "hardness": 5.0,
+    "resistance": 30.0,
+    "hasGravity": false,
+    "creativeTab": {
+      "value": "CUSTOM:CoinCraft"
+    },
+    "destroyTool": "pickaxe",
+    "affectedBySilkTouch": false,
+    "customDrop": {
+      "value": "CUSTOM:CastIronFurnaceOff"
+    },
+    "dropAmount": 1,
+    "isBeaconBase": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "IRON"
+    },
+    "tickRate": 1,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "colorOnMap": "IRON",
+    "creativePickItem": {
+      "value": "CUSTOM:CastIronFurnaceOff"
+    },
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "reactionToPushing": "BLOCK",
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "METAL"
+    },
+    "luminance": 1.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 0,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "particleSpawningCondition": "ALWAYS",
+    "hasInventory": true,
+    "guiBoundTo": "CastIronFurnaceGUI",
+    "openGUIOnRightClick": true,
+    "inventorySize": 4,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [
+      3
+    ],
+    "onTickUpdate": {
+      "name": "CastIronFurnaceUpdateTick"
+    },
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}
