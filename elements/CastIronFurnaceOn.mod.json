@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "castironfurnace:default",
+    "customModelName": "castironfurnaceon:default",
     "rotationMode": 1,
     "hasTransparency": true,
     "transparencyType": "CUTOUT",

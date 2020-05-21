@@ -2,7 +2,7 @@
   "_fv": 6,
   "_type": "block",
   "definition": {
-    "texture": "furnace_tex",
+    "texture": "furnace0",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -12,7 +12,7 @@
     "customModelName": "castironfurnace:default",
     "rotationMode": 1,
     "hasTransparency": true,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT",
     "mx": 0.0,
     "my": 0.0,
     "mz": 0.0,

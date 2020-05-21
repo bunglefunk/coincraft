@@ -44,7 +44,7 @@ public class ProcedureFurnaceFuel extends ElementsCoinCraft.ModElement {
 					return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.COAL, (int) (1), 0).getItem())) {
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == new ItemStack(Items.COAL, (int) (1), 0).getItem())) {
 			if (!world.isRemote) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				TileEntity _tileEntity = world.getTileEntity(_bp);
@@ -56,7 +56,7 @@ public class ProcedureFurnaceFuel extends ElementsCoinCraft.ModElement {
 			{
 				TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (inv instanceof TileEntityLockableLoot)
-					((TileEntityLockableLoot) inv).decrStackSize((int) (0), (int) (1));
+					((TileEntityLockableLoot) inv).decrStackSize((int) (2), (int) (1));
 			}
 		}
 	}

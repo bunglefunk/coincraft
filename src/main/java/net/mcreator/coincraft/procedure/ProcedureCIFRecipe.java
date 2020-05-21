@@ -125,7 +125,7 @@ public class ProcedureCIFRecipe extends ElementsCoinCraft.ModElement {
 					}
 					return 0;
 				}
-			}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) > 0))) {
+			}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (2))) > 0))) {
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 					$_dependencies.put("x", x);
@@ -191,7 +191,7 @@ public class ProcedureCIFRecipe extends ElementsCoinCraft.ModElement {
 								return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
 							return ItemStack.EMPTY;
 						}
-					}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (1))).getItem() == new ItemStack(Items.IRON_INGOT, (int) (1))
+					}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.IRON_INGOT, (int) (1))
 							.getItem()) && ((new Object() {
 								public ItemStack getItemStack(BlockPos pos, int sltid) {
 									TileEntity inv = world.getTileEntity(pos);
@@ -199,7 +199,7 @@ public class ProcedureCIFRecipe extends ElementsCoinCraft.ModElement {
 										return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
 									return ItemStack.EMPTY;
 								}
-							}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == new ItemStack(Items.CLAY_BALL, (int) (1))
+							}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (1))).getItem() == new ItemStack(Items.CLAY_BALL, (int) (1))
 									.getItem()))
 							&& ((((new Object() {
 								public int getAmount(BlockPos pos, int sltid) {
@@ -228,6 +228,11 @@ public class ProcedureCIFRecipe extends ElementsCoinCraft.ModElement {
 										}
 									}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (3)))
 											.getItem() == new ItemStack(Blocks.AIR, (int) (1)).getItem()))))) {
+						{
+							TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (inv instanceof TileEntityLockableLoot)
+								((TileEntityLockableLoot) inv).decrStackSize((int) (0), (int) (1));
+						}
 						{
 							TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 							if (inv instanceof TileEntityLockableLoot)
@@ -266,6 +271,23 @@ public class ProcedureCIFRecipe extends ElementsCoinCraft.ModElement {
 						}
 						world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
 								.getObject(new ResourceLocation("block.furnace.fire_crackle")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+						if (!world.isRemote) {
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							TileEntity _tileEntity = world.getTileEntity(_bp);
+							IBlockState _bs = world.getBlockState(_bp);
+							if (_tileEntity != null)
+								_tileEntity.getTileData().setBoolean("furnaceDone", (true));
+							world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+						}
+					} else {
+						if (!world.isRemote) {
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							TileEntity _tileEntity = world.getTileEntity(_bp);
+							IBlockState _bs = world.getBlockState(_bp);
+							if (_tileEntity != null)
+								_tileEntity.getTileData().setBoolean("furnaceDone", (false));
+							world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+						}
 					}
 					if (!world.isRemote) {
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
@@ -292,16 +314,40 @@ public class ProcedureCIFRecipe extends ElementsCoinCraft.ModElement {
 					world.notifyBlockUpdate(_bp, _bs, _bs, 3);
 				}
 			}
-			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				IBlockState _bs = BlockCastIronFurnaceOff.block.getDefaultState();
-				IBlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getProperties().entrySet()) {
-					IProperty _property = entry.getKey();
-					if (_bs.getPropertyKeys().contains(_property))
-						_bs = _bs.withProperty(_property, (Comparable) entry.getValue());
+			if (((new Object() {
+				public boolean getValue(BlockPos pos, String tag) {
+					TileEntity tileEntity = world.getTileEntity(pos);
+					if (tileEntity != null)
+						return tileEntity.getTileData().getBoolean(tag);
+					return false;
 				}
-				world.setBlockState(_bp, _bs, 3);
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "furnaceDone")) == (true))) {
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					IBlockState _bs = BlockCastIronFurnaceOff.block.getDefaultState();
+					IBlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getProperties().entrySet()) {
+						IProperty _property = entry.getKey();
+						if (_bs.getPropertyKeys().contains(_property))
+							_bs = _bs.withProperty(_property, (Comparable) entry.getValue());
+					}
+					TileEntity _te = world.getTileEntity(_bp);
+					NBTTagCompound _bnbt = null;
+					if (_te != null) {
+						_bnbt = _te.writeToNBT(new NBTTagCompound());
+						_te.invalidate();
+					}
+					world.setBlockState(_bp, _bs, 3);
+					if (_bnbt != null) {
+						_te = world.getTileEntity(_bp);
+						if (_te != null) {
+							try {
+								_te.readFromNBT(_bnbt);
+							} catch (Exception ignored) {
+							}
+						}
+					}
+				}
 			}
 		}
 	}
